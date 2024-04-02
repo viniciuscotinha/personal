@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    double glicose;
+
+    printf("Digite a medida de glicose: ");
+    scanf("%lf", &glicose);
+
+    if (glicose <= 100) {
+        printf("Classificacao: normal\n");
+    }
+    else {
+        if (glicose <= 140) {
+            printf("Classificacao: elevado\n");
+        }
+        else {
+            printf("Classificacao: diabetes\n");
+        }
+    }
+    return 0;
+}
